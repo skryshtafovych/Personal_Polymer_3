@@ -1,11 +1,11 @@
 {
   "entrypoint": "index.html",
-  "shell": "src/start-polymer3.js",
+  "shell": "src/start-blog.js",
   "fragments": [
     "src/lazy-element.js"
   ],
   "sources": [
-   "src/start-polymer3.js",
+   "src/start-blog.js",
    "manifest/**",
    "package.json"
   ],
@@ -14,7 +14,7 @@
     "node_modules/@webcomponents/webcomponentsjs/**"
   ],
   "builds": [
-    { 
+    {
       "preset": "es6-unbundled"
     }
   ],

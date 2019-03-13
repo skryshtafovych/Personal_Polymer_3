@@ -42,7 +42,7 @@ class StartPolymer3 extends PolymerElement {
     // Resolve warning about scroll performance
     // See https://developers.google.com/web/updates/2016/06/passive-event-listeners
     setPassiveTouchGestures(true);
-    this.message = 'Hello World! I\'m a Polymer element :)';
+    this.message = 'Hello World! I\'m a Bloggie element :)';
   }
 
   ready(){
@@ -57,7 +57,7 @@ class StartPolymer3 extends PolymerElement {
   togglePie(){
     if(this.pie && !this.loadComplete) {
       // See https://developers.google.com/web/updates/2017/11/dynamic-import
-      import('./lazy-element.js').then((LazyElement) => {
+      import('./lazy-blog.js').then((LazyElement) => {
         console.log("LazyElement loaded");
       }).catch((reason) => {
         console.log("LazyElement failed to load", reason);
@@ -77,12 +77,12 @@ class StartPolymer3 extends PolymerElement {
         }
       </style>
 
-      <h1>Stepank.com Polymer 3.0</h1>
+      <h1>Stepank.com Blog 3.0</h1>
       <p>[[message]]</p>
       <paper-checkbox id="omgpie"
         toggles
         noink
-        checked={{pie}}>I like pie.</paper-checkbox>
+        checked={{pie}}>I like blogs.</paper-checkbox>
       <template is="dom-if" if=[[pie]]>
         <lazy-element><p>lazy loading...</p></lazy-element>
 
@@ -96,4 +96,4 @@ class StartPolymer3 extends PolymerElement {
 }
 
 // Register the element with the browser.
-customElements.define('start-polymer3', StartPolymer3);
+customElements.define('start-blog', StartPolymer3);
