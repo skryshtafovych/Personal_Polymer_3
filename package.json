@@ -9,7 +9,7 @@
     "@polymer/paper-checkbox": "latest",
     "@polymer/polymer": "latest",
     "@webcomponents/webcomponentsjs": "latest",
-    "@polymer/app-layout":"latest",
-    "@polymer/app-route":"latest"
+    "@polymer/app-layout": "latest",
+    "@polymer/app-route": "latest"
   }
 }

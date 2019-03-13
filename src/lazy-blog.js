@@ -13,18 +13,16 @@
 // so no need to change the symbol.
 import { PolymerElement, html } from '@polymer/polymer/polymer-element.js';
 
-class LazyElement extends PolymerElement {
+class LazyBlogElement extends PolymerElement {
   static get template () {
     // Template getter must return an instance of HTMLTemplateElement.
     // The html helper function makes this easy.
     return html`
       <p>You like blogs. Also your interested in CheckBoxes</p>
-      <paper-checkbox>Unchecked</paper-checkbox>
-      <paper-checkbox checked>Checked</paper-checkbox>
-      <paper-checkbox disabled>Disabled</paper-checkbox>
+
     `;
   }
 }
 
 // Register the element with the browser.
-customElements.define('lazy-element', LazyElement);
+customElements.define('lazy-blog-element', LazyBlogElement);
